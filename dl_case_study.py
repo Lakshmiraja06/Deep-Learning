@@ -98,9 +98,10 @@ for i, idx in enumerate(indices):
 plt.tight_layout()
 plt.show()
 
-# 11. Save model for deployment
+
 model.save("mnist_mlp_for_cheque_digits.h5")
 print("Saved model to mnist_mlp_for_cheque_digits.h5")
+
 
 #case study 2
 
@@ -164,6 +165,7 @@ plt.ylabel("Count")
 plt.title("Autoencoder Outlier Detection")
 plt.show()
 
+
 # case study 3
 
 import pandas as pd
@@ -212,6 +214,7 @@ print("Best CV Score:", grid.best_score_)
 y_pred = grid.predict(X_test_vec)
 print("\nConfusion Matrix:\n", confusion_matrix(y_test, y_pred))
 print("\nClassification Report:\n", classification_report(y_test, y_pred, digits=4))
+
 
 #case study 4
 
@@ -268,6 +271,7 @@ for user_id in range(num_users):
     recommended_idx = user_unrated[np.argmax(predicted_for_unrated)]
     recommended_score = predicted_for_unrated[np.argmax(predicted_for_unrated)]
     print(f"User {user_id}: Recommend Movie {recommended_idx} (Predicted Rating {recommended_score:.2f})")
+    
 
 #case study 5
 
